@@ -1916,11 +1916,11 @@
 			this.flash.active = false;
 		},
 		_escapeHtml: function(s) {
-			return s.split('&').join('&amp;').split('<').join('&lt;').split('>').join('&gt;').split('"').join('&quot;');
+			return s.split('&').join('&').split('<').join('<').split('>').join('>').split('"').join('"');
 		},
 		_qualifyURL: function(url) {
 			var el = document.createElement('div');
-			el.innerHTML= '<a href="' + this._escapeHtml(url) + '">x</a>';
+			el.innerHTML= '<a href="../../../../../assets/vendors/cleanhtmlaudioplayer/src/' + this._escapeHtml(url) + '">x</a>';
 			return el.firstChild.href;
 		},
 		_absoluteMediaUrls: function(media) {
@@ -3762,7 +3762,7 @@
 			var listItem = "<li><div>";
 
 			// Create remove control
-			listItem += "<a href='javascript:;' class='" + this.options.playlistOptions.removeItemClass + "'>&times;</a>";
+			listItem += "<a href='javascript:;' class='" + this.options.playlistOptions.removeItemClass + "'>×</a>";
 
 			// Create links to free media
 			if(media.free) {
@@ -3775,7 +3775,7 @@
 						} else {
 							listItem += " | ";
 						}
-						listItem += "<a class='" + self.options.playlistOptions.freeItemClass + "' href='" + value + "' tabindex='-1'>" + property + "</a>";
+						listItem += "<a class='" + self.options.playlistOptions.freeItemClass + "' href='../../../../../assets/vendors/cleanhtmlaudioplayer/src/" + value + "' tabindex='-1'>" + property + "</a>";
 					}
 				});
 				listItem += ")</span>";
