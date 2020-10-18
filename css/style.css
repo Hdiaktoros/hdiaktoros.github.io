@@ -1,7 +1,21 @@
 /* Base */
 html {
   overflow-x: hidden; }
+  
+.iframe-container {
+  overflow: hidden;
+  padding-top: 125%;
+  position: relative;
+}
 
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 body {
   line-height: 1.7;
   color: gray;
