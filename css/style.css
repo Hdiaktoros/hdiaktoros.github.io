@@ -1,7 +1,10 @@
 /* Base */
 html {
   overflow-x: hidden; }
-  
+ .tab {
+ margin-left: 10.5em
+}
+
 .iframe-container {
   overflow: hidden;
   padding-top: 125%;
